@@ -12,10 +12,15 @@ fn main() {
 
     io::stdin()
         .read_line(&mut guess) // similarly, references are immutable by default.
-        // so &mut is used to declare mutable reference to adress of guess variable.
+        // so &mut is used to declare mutable reference to address of guess variable.
         .expect("failed to read line");
     
     println!("You guessed {}", guess);
+    let mut apples = 5;
+    let pears = 3;
+    println!("apples = {}", apples);
+    apples = 7;
+    println!("apples = {}, pears = {}", apples, pears);
 
     /* we can use:
         
