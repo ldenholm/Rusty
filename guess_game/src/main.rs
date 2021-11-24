@@ -4,7 +4,7 @@ use rand::Rng;
 fn main() {
     println!("Greetings traveller, welcome to the game a la guess");
     println!("We are thinking of a natural number, please enter your best guess");
-    let rand = rand::thread_rng().gen_range(1..101);
+    let rand = rand::thread_rng().gen_range(1..101); //range inclusive of lower bound but not upper, hence we set upper to 101.
     let mut guess = String::new();
     // vars are immutable by default.
     // let apples = 5; binds 5 to apples, apples is immutable.
@@ -22,6 +22,7 @@ fn main() {
     apples = 7;
     println!("apples = {}, pears = {}", apples, pears);
 
+    // trivial change
     /* we can use:
         
     let x = 5;
