@@ -37,7 +37,7 @@ fn main() {
             Ordering::Less => println!("Too small"),
             Ordering::Greater => println!("Too large"),
             Ordering::Equal => {
-                println!("Congrats, you're guessed the correct number!");
+                println!("Congrats, you guessed the correct number!");
                 break;
             }
         };
